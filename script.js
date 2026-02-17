@@ -7,16 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
       // Prefer the content inside the same card
       let content = card ? card.querySelector(".read-more-content") : null;
 
-      // Fallback for other pages where content is immediately after the button
+         // Fallback for other pages: find the next .read-more-content after the button
       if (!content) {
-        const next = button.nextElementSibling;
-        if (next && next.classList.contains("read-more-content")) content = next;
+        let next = button.nextElementSibling;
+        while (next && !next.classList.contains("read-more-content")) {
+          next = next.nextElementSibling;
+        }
+        content = next;
       }
 
       // Safety check
       if (!content) return;
 
-      const isOpen = content.style.display === "block";
+      const isOpen = getComputedStyle(content).display !== "none";
 
       const openText = button.dataset.open || "Read less";
       const closedText = button.dataset.closed || "Read more";
