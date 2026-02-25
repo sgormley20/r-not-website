@@ -343,29 +343,22 @@ h1, h2, h3 {
 /* =========================
    Watermark (bottom-right)
 ========================= */
-.site-watermark{
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-
-  width: 240px;      /* size */
-  max-width: 35vw;   /* responsive cap */
-
-  opacity: 0.10;     /* watermark fade */
-  pointer-events: none;
-
-  z-index: 10;       /* above background, below modals if you add them later */
+/* Allow layout to anchor children */
+.layout {
+  position: relative;
 }
 
-@media (max-width: 768px){
-  .site-watermark{
-    width: 140px;
-    right: 10px;
-    bottom: 10px;
-    opacity: 0.08;
+/* Watermark inside layout space */
+.layout-watermark {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 
-    pointer-events: none;
-  }
+  width: 260px;
+  max-width: 35vw;
+
+  opacity: 0.10;
+  pointer-events: none;
 }
 /* =========================
    Page-specific overrides
