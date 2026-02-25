@@ -363,6 +363,8 @@ h1, h2, h3 {
     right: 10px;
     bottom: 10px;
     opacity: 0.08;
+
+    pointer-events: none;
   }
 }
 /* =========================
