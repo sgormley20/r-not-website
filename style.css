@@ -1,7 +1,7 @@
 /* =========================
    Global page
 ========================= */
-
+body { outline: 6px solid red !important; }
 body {
     margin: 0;
     background: #F6F5FA;
