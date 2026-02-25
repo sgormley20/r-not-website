@@ -354,7 +354,7 @@ h1, h2, h3 {
   width: 260px;
   height: 260px;
 
-  background-image: url("/r-not-site/images/n2o.png"); /* or /images/n2o.png */
+  background-image: url("/r-not-website/images/n2o.png"); /* or /images/n2o.png */
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
