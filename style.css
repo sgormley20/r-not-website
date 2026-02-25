@@ -344,7 +344,7 @@ h1, h2, h3 {
    Watermark (bottom-right)
 ========================= */
 /* Allow layout to anchor children */
-.layout {
+/*.layout {
   position: relative;
 }
 
@@ -364,7 +364,26 @@ h1, h2, h3 {
 
   opacity: 0.10;
   pointer-events: none;
+} */
+
+.layout { position: relative; }
+
+.layout::after{
+  content:"";
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+  height: 260px;
+
+  background: rgba(255,0,0,0.15); /* TEMP */
+  border: 2px solid red;          /* TEMP */
+  z-index: 1;
+  pointer-events: none;
 }
+
+
+
 /* =========================
    Page-specific overrides
 ========================= */
