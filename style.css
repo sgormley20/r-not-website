@@ -342,21 +342,19 @@ h1, h2, h3 {
 /* =========================
    Watermark (bottom-right)
 ========================= */
-.layout{
+.page-n2o .layout{
   position: relative;
 }
 
-.layout::after{
+.page-n2o .layout::after{
   content: "";
   position: absolute;
   right: 0;
   bottom: 0;
-
   width: 260px;
   height: 260px;
 
-  /* IMPORTANT: use a root-based path like your hero images */
-  background-image: url("/r-not-site/images/n2o.png");
+  background-image: url("/r-not-site/images/n2o.png"); /* or /images/n2o.png */
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
@@ -364,7 +362,6 @@ h1, h2, h3 {
   opacity: 0.10;
   pointer-events: none;
 }
-
 
 
 /* =========================
