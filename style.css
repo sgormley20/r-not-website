@@ -348,14 +348,19 @@ h1, h2, h3 {
   position: relative;
 }
 
-/* Watermark inside layout space */
-.layout-watermark {
+.layout::after{
+  content: "";
   position: absolute;
   right: 0;
   bottom: 0;
 
   width: 260px;
-  max-width: 35vw;
+  height: 260px;
+
+  background-image: url("../images/watermark.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
 
   opacity: 0.10;
   pointer-events: none;
