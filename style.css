@@ -1,7 +1,6 @@
 /* =========================
    Global page
 ========================= */
-body { outline: 6px solid red !important; }
 body {
     margin: 0;
     background: #F6F5FA;
@@ -343,8 +342,7 @@ h1, h2, h3 {
 /* =========================
    Watermark (bottom-right)
 ========================= */
-/* Allow layout to anchor children */
-/*.layout {
+.layout{
   position: relative;
 }
 
@@ -357,28 +355,13 @@ h1, h2, h3 {
   width: 260px;
   height: 260px;
 
-  background-image: url("../images/n2o.png");
+  /* IMPORTANT: use a root-based path like your hero images */
+  background-image: url("/r-not-site/images/n2o.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
 
   opacity: 0.10;
-  pointer-events: none;
-} */
-
-.layout { position: relative; }
-
-.layout::after{
-  content:"";
-  position:absolute;
-  right: 0;
-  bottom: 0;
-  width: 260px;
-  height: 260px;
-
-  background: rgba(255,0,0,0.15); /* TEMP */
-  border: 2px solid red;          /* TEMP */
-  z-index: 1;
   pointer-events: none;
 }
 
