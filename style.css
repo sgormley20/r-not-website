@@ -511,13 +511,15 @@ h3 {
 @media (max-width: 900px) {
   .page-n2o .n2o-molecule {
     position: static;
-    display: block;
+    display: inline-block;
 
-    margin: var(--space-md) 0 0 auto;
+    margin: var(--space-md) 10px 0 auto;
 
     right: auto;
     top: auto;
     transform: none;
+
+    width: clamp(100px, 35vw, 160px);
   }
 }
 /* =========================
