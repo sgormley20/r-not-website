@@ -499,6 +499,19 @@ h3 {
   opacity: 0.6;
   pointer-events: none;
 }
+
+@media (max-width: 900px) {
+  .page-n2o .n2o-molecule {
+    position: static;
+    display: block;
+
+    margin: var(--space-md) auto 0;
+
+    right: auto;
+    top: auto;
+    transform: none;
+  }
+}
 /* =========================
    Page-specific overrides
 ========================= */
