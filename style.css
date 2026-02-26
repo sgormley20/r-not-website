@@ -103,6 +103,11 @@ body {
     margin-bottom: 4px;
   }
 
+    .site-title{
+    margin: 0;
+  }
+
+
 }
 
 .header-center {
