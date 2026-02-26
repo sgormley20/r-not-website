@@ -435,16 +435,26 @@ h3{ font-size: var(--h3); }
   width: 100%;
 }
 
+@media (min-width: 900px){
+
+  .home-intro-image{
+    flex: 0 0 50%;
+    width: 54%;
+    height: clamp(220px, 28vw, 360px);
+    object-fit: cover;
+    object-position: 60% 35%;
+  }
+
+}
+
 /* Text block */
 
-.home-intro-text {
-  flex: 1;
-  max-width: 600px;
-  text-align: left;
-
+.home-intro {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
+  flex-direction: column;   /* mobile first */
+  gap: var(--space-lg);
+  padding: var(--space-md) 0;
+  width: 100%;
 }
 
 .home-intro-text h1{
