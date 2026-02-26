@@ -68,6 +68,31 @@ body {
     margin: 0 auto;
 }
 
+.site-logo {
+    height: clamp(120px, 14vw, 220px);
+    position: absolute;
+    left: clamp(16px, 4vw, 32px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 700px){
+
+  .header-inner{
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .site-logo{
+    position: static;
+    transform: none;
+    height: 90px;
+    margin-bottom: 4px;
+  }
+
+}
+
 .header-center {
     display: flex;
     flex-direction: column;
@@ -83,13 +108,6 @@ body {
     text-align: center;
 }
 
-.site-logo {
-    height: clamp(120px, 14vw, 220px);
-    position: absolute;
-    left: clamp(16px, 4vw, 32px);
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 /* =========================
   Site Footer 
