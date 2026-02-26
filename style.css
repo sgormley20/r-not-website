@@ -356,6 +356,8 @@ h3 {
   margin-top: var(--space-sm);
   font-size: var(--text-base);
   font-family: inherit;
+  
+    -webkit-tap-highlight-color: transparent;
 }
 
 .read-toggle:hover {
@@ -367,6 +369,12 @@ h3 {
   margin-top: var(--space-sm);
 }
 
+/* Mobile fix: prevent sticky hover */
+@media (hover: none) {
+  .read-toggle:hover {
+    background: none;
+  }
+}
 /* VIDEO EMBED */
 
 .video-wrapper {
