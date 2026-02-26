@@ -580,10 +580,20 @@ h3{ font-size: var(--h3); }
 }
 
 /*PPI landing*/
-.title-shift {
-  margin-left: -50px;
+@media (min-width: 900px){
+  .title-shift {
+    margin-left: -50px;
+  }
 }
 
+@media (max-width: 700px){
+
+  .title-shift{
+    margin-left: 0;
+    padding-inline: clamp(16px, 4vw, 32px);
+  }
+
+}
 .hero1 {
   width: 100%;
 
