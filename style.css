@@ -510,18 +510,16 @@ h3 {
 
 @media (max-width: 900px) {
   .page-n2o .n2o-molecule {
-    position: static;
-    display: inline-block;
+    position: absolute;
 
-    margin: var(--space-md) 10px 0 auto;
-
-    right: auto;
-    top: auto;
-    transform: none;
+    right: 10px;
+    top: clamp(220px, 40vw, 300px);
 
     width: clamp(100px, 35vw, 160px);
+    opacity: 0.5;
   }
 }
+
 /* =========================
    Page-specific overrides
 ========================= */
