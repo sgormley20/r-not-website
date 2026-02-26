@@ -312,6 +312,24 @@ h3{ font-size: var(--h3); }
   }
 
 }
+
+@media (max-width: 900px){
+
+  .layout{
+    flex-direction: column;
+  }
+
+  .main-content{
+    order: 1;
+  }
+
+  .sidebar{
+    order: 2;
+    width: 100%;
+    padding-top: 0;
+  }
+
+}
 /*Read More/Less*/
 
 .read-toggle {
