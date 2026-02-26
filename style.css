@@ -20,8 +20,13 @@
 /* =========================
    Global container
 ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container{
-  width: 100%;
   max-width: var(--container);
   margin-inline: auto;
   padding-inline: clamp(16px, 4vw, 32px);
