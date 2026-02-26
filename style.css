@@ -356,7 +356,7 @@ h3 {
   margin-top: var(--space-sm);
   font-size: var(--text-base);
   font-family: inherit;
-  
+
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -513,7 +513,7 @@ h3 {
     position: static;
     display: block;
 
-    margin: var(--space-md) auto 0;
+    margin: var(--space-md) 0 0 auto;
 
     right: auto;
     top: auto;
