@@ -688,6 +688,14 @@ h3 {
 
 
 /*Research Team landing*/
+@media (max-width: 700px){
+
+  .meet-team .main-content{
+    padding-inline: var(--space-sm);
+  }
+
+}
+
 .title-shift2 {
   margin-left: -50px;
 }
