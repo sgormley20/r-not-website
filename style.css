@@ -486,21 +486,19 @@ h3 {
 /* =========================
    Watermark (bottom-right)
 ========================= */
-/*.page-n2o .layout {
+.page-n2o .main-content {
   position: relative;
 }
 
-.page-n2o .n2o-bg {
+.page-n2o .n2o-molecule {
   position: absolute;
-  right: 5%;
-  top: 55%;
-
-  transform: translateY(-50%);
+  right:clamp(180px, 12vw, 280px);
+  top: clamp(250px, 18vw, 280px);
 
   width: clamp(140px, 18vw, 260px);
   opacity: 0.6;
   pointer-events: none;
-}*/
+}
 /* =========================
    Page-specific overrides
 ========================= */
@@ -709,4 +707,8 @@ h3 {
   background-size: 100% 100%, cover;
   background-position: center, center 50%;
   background-repeat: no-repeat;
+}
+/*N20 page*/ 
+.page-n2o .main-content h1 {
+  margin-top: 0;
 }
