@@ -486,38 +486,27 @@ h3 {
 /* =========================
    Watermark (bottom-right)
 ========================= */
-
-.page-n2o .layout {
+/*.page-n2o .layout {
   position: relative;
 }
 
-.page-n2o .layout::after {
-  content: "";
+.page-n2o .n2o-bg {
   position: absolute;
-  inset: 0;
+  right: 5%;
+  top: 55%;
 
-  background-image: url("../images/n2o.png");
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: top left;
+  transform: translateY(-50%);
 
+  width: clamp(140px, 18vw, 260px);
   opacity: 0.6;
   pointer-events: none;
-  z-index: 0;
-}
-
-.page-n2o .layout>* {
-  position: relative;
-  z-index: 1;
-}
-
+}*/
 /* =========================
    Page-specific overrides
 ========================= */
 /* =========================
    Homepage layout
 ========================= */
-
 .home .main-content {
   max-width: none;
 }
