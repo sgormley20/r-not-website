@@ -723,7 +723,54 @@ h3 {
   background-position: center, center 50%;
   background-repeat: no-repeat;
 }
+
 /*N20 page*/ 
 .page-n2o .main-content h1 {
+  margin-top: 0;
+}
+
+.page-n2o .main-content {
+  position: relative;
+}
+
+.page-n2o .n2o-molecule {
+  position: absolute;
+  right:clamp(180px, 12vw, 280px);
+  top: clamp(250px, 18vw, 280px);
+
+  width: clamp(140px, 18vw, 260px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .page-n2o .n2o-molecule {
+    display: none;
+  }
+}
+
+/*Who Can Take Part*/
+
+.take-part .main-content {
+  position: relative;
+}
+
+.take-part .check {
+  position: absolute;
+  right:clamp(300px, 12vw, 400px);
+  top: clamp(250px, 18vw, 280px);
+
+  width: clamp(50px, 18vw, 180px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .take-part .check {
+    display: none;
+  }
+}
+
+body.take-part .main-content h1 {
   margin-top: 0;
 }
