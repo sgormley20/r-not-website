@@ -18,6 +18,15 @@
 }
 
 /* =========================
+   Global container
+========================= */
+.container{
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 32px);
+}
+/* =========================
    Global page
 ========================= */
 body {
@@ -57,7 +66,6 @@ body {
 
     max-width: var(--container);
     margin: 0 auto;
-    padding: 0 clamp(16px, 4vw, 32px);
 }
 
 .header-center {
@@ -97,8 +105,6 @@ body {
 
 .footer-inner{
   width: 100%;
-  padding-left: clamp(16px, 4vw, 32px);
-  padding-right: clamp(16px, 4vw, 32px);
 }
 
 .footer-heading{
@@ -299,7 +305,7 @@ h3{ font-size: var(--h3); }
     max-width: var(--container);
     width: 100%;
     margin: 0 auto;
-    padding: var(--space-xs) clamp(16px, 4vw, 32px) var(--space-lg)
+    padding-block: var(--space-xs) var(--space-lg);
 }
 
 /* TEAM GRID (2 cards side-by-side) */
