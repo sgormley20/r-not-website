@@ -68,9 +68,6 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-
-    max-width: var(--container);
-    margin: 0 auto;
 }
 
 .site-logo {
