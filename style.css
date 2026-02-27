@@ -178,23 +178,19 @@ body {
 
 @media (max-width: 700px) {
 
-  .main-nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    width: auto;
+.main-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-bottom: 6px;
+    flex-wrap: nowrap;
   }
 
-}
-
-.main-nav a {
-  color: #1C1A81;
-  text-decoration: none;
-  font-size: clamp(14px, 0.8vw, 18px);
-  padding-inline: 8px 14px;
-  border: 1px solid transparent;
-  display: inline-block;
+  .main-nav a {
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
 }
 
 .main-nav a.active {
@@ -212,6 +208,9 @@ body {
   border-radius: 30px;
 }
 
+.main-nav::-webkit-scrollbar {
+  display: none;
+}
 
 /* Sidebar nav (global pill menu) */
 
