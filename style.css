@@ -68,6 +68,18 @@ body {
     overflow-x: visible;
   }
 }
+
+@media (max-width: 700px) {
+
+  .main-content {
+    max-width: none;
+  }
+
+  .container {
+    padding-inline: 20px;
+  }
+
+}
 /* =========================
    Header
 ========================= */
@@ -529,7 +541,17 @@ h3 {
 /* =========================
    Subpage Layout 
 ========================= */
+/* Create an alignment anchor */
+.subpage .page-heading {
+  position: relative;
+}
 
+/* Pull heading to align with sidebar pills */
+.subpage .page-heading h1 {
+  margin: 0;
+  transform: translateY(-0.35em);
+  text-align: center;
+}
 /* =========================
    Main Content
 ========================= */
@@ -627,9 +649,6 @@ h3 {
 /* =========================
    Homepage layout
 ========================= */
-.home .main-content {
-  max-width: none;
-}
 
 /* Mobile first */
 
@@ -744,10 +763,6 @@ h3 {
   margin-top: var(--space-md);
 }
 
-.sidebar-shift.sidebar {
-  padding-top: 0;
-}
-
 .hero {
   align-items: center;
 
@@ -789,9 +804,6 @@ h3 {
 }
 
 /*N20 page*/ 
-.page-n2o .main-content h1 {
-  margin-top: 0;
-}
 
 .page-n2o .main-content {
   position: relative;
@@ -835,10 +847,6 @@ h3 {
   }
 }
 
-body.take-part .main-content h1 {
-  margin-top: 0;
-}
-
 /*What is Involved*/
 
 .involved .main-content {
@@ -859,8 +867,4 @@ body.take-part .main-content h1 {
   .involved .line {
     display: none;
   }
-}
-
-body.involved .main-content h1 {
-  margin-top: 0;
 }
