@@ -90,6 +90,12 @@ body {
 }
 
 @media (max-width: 700px) {
+  
+  .header-center {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* prevents bleed */
+  }
 
   .header-inner {
     flex-direction: column;
