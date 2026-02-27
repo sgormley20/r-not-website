@@ -56,7 +56,11 @@ body {
   flex-direction: column;
 }
 
-
+@media (max-width: 700px) {
+  html, body {
+    overflow-x: visible;
+  }
+}
 /* =========================
    Header
 ========================= */
@@ -180,17 +184,22 @@ body {
 
 @media (max-width: 700px) {
 
-.main-nav {
+ .main-nav {
+    display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    justify-content: flex-start;
-    gap: 12px;
-    padding-bottom: 6px;
     flex-wrap: nowrap;
-    min-width: 0;   
-    max-width: 100%; 
-    margin-inline: calc(-1 * clamp(16px, 4vw, 32px));
-    padding-inline: clamp(16px, 4vw, 32px);
+
+    width: 100vw;          
+    max-width: none;       
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    gap: 12px;
+    padding: 0 clamp(16px, 4vw, 32px) 6px;  
+
+    margin-left: calc(50% - 50vw);  
+    margin-right: calc(50% - 50vw);
+
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-x: contain;
   }
