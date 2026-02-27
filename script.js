@@ -28,4 +28,24 @@ document.addEventListener("DOMContentLoaded", () => {
       button.textContent = isOpen ? closedText : openText;
     });
   });
+
+   const sidebar = document.querySelector(".sidebar.section-nav");
+  const mobileLinks = document.querySelector(".mobile-nav-links");
+
+  if (sidebar && mobileLinks) {
+    const links = sidebar.querySelectorAll("a.pill");
+
+    links.forEach(link => {
+      const clone = link.cloneNode(true);
+      mobileLinks.appendChild(clone);
+    });
+
+    // Optional: close dropdown after tapping a link
+    mobileLinks.addEventListener("click", (e) => {
+      if (e.target.closest("a")) {
+        const nav = document.querySelector(".mobile-nav");
+        if (nav) nav.open = false;
+      }
+    });
+  }
 });
