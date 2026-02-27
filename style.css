@@ -327,21 +327,9 @@ h3 {
 }
 
 @media (max-width: 900px) {
-
-  .layout {
-    flex-direction: column;
-  }
-
-  .main-content {
-    order: 1;
-  }
-
   .sidebar {
-    order: 2;
-    width: 100%;
-    padding-top: 0;
+    display: none;
   }
-
 }
 
 /*Read More/Less*/
