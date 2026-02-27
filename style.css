@@ -241,6 +241,51 @@ body {
   color: white;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+
+  .mobile-nav {
+    display: block;
+    margin-bottom: var(--space-md);
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: var(--space-xs) var(--space-sm);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .mobile-nav summary {
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  /* Remove default triangle */
+  .mobile-nav summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Add our own indicator */
+  .mobile-nav summary::after {
+    content: "▾";
+    float: right;
+    opacity: 0.7;
+  }
+
+  .mobile-nav[open] summary::after {
+    content: "▴";
+  }
+
+  .mobile-nav-links {
+    margin-top: var(--space-sm);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-sm);
+  }
+
+}
 /* =========================
    Landing Page Layout
 ========================= */
