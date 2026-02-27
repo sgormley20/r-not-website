@@ -774,3 +774,29 @@ h3 {
 body.take-part .main-content h1 {
   margin-top: 0;
 }
+
+/*What is Involved*/
+
+.involved .main-content {
+  position: relative;
+}
+
+.involved .line {
+  position: absolute;
+  right:clamp(200px, 12vw, 300px);
+  top: clamp(240px, 18vw, 270px);
+
+  width: clamp(50px, 18vw, 180px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .involved .line {
+    display: none;
+  }
+}
+
+body.involved .main-content h1 {
+  margin-top: 0;
+}
