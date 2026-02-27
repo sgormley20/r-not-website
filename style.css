@@ -115,9 +115,6 @@ body {
     margin: 0;
   }
 
-
-}
-
 .header-center {
   display: flex;
   flex-direction: column;
@@ -127,6 +124,9 @@ body {
   max-width: 100%;
   min-width: 0; 
 }
+
+}
+
 
 .site-title {
   color: #1C1A78;
