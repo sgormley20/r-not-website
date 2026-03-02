@@ -229,6 +229,9 @@ body {
   }
 }
 
+.main-nav a:visited {
+  color: #1C1A81;
+}
 .main-nav a.active {
   background: #1C1A81;
   color: white;
