@@ -754,8 +754,8 @@ h3 {
 
   background:
     var(--hero-gradient),      
-    /*url("/r-not-website/images/image2.jpg");*/
-     url("../images/image2.jpg");
+    url("/r-not-website/images/image2.jpg");
+    /*url("../images/image2.jpg");*/
 
    background-position: center, center 50%;
    background-size: 100% 100%, cover;
@@ -790,8 +790,8 @@ h3 {
 
   background:
     var(--hero-gradient),
-    /*url("/r-not-website/images/image1.jpg");*/
-   url("../images/image1.jpg");
+    url("/r-not-website/images/image1.jpg");
+   /*url("../images/image1.jpg");*/
 
   background-position: center, center 20%;
   background-size: 100% 100%, cover;
@@ -812,8 +812,8 @@ h3 {
 
   background:
     var(--hero-gradient),
-    /*url("/r-not-website/images/image3.jpg");*/
-    url("../images/image3.jpg");
+    url("/r-not-website/images/image3.jpg");
+    /*url("../images/image3.jpg");*/
 
   background-position: center, center 70%;
   background-size: 100% 100%, cover;
@@ -879,18 +879,24 @@ h3 {
   position: relative;
 }
 
-.involved .line {
+.involved .path {
   position: absolute;
-  right: clamp(200px, 12vw, 300px);
-  top: clamp(240px, 18vw, 270px);
+  right: clamp(230px, 12vw, 330px);
+  top: clamp(60px, 18vw, 110px);
 
-  width: clamp(50px, 18vw, 180px);
+  width: clamp(60px, 20vw, 320px);
   opacity: 0.6;
   pointer-events: none;
 }
 
 @media (max-width: 900px) {
-  .involved .line {
+  .involved .path {
     display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .involved .path {
+    right: clamp(100px, 14vw, 200px);
   }
 }
