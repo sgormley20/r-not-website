@@ -439,7 +439,7 @@ h3 {
 
   /* these match your current heroes */
   background-size: 100% 100%, cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat no-repeat;
 }
 
 /* Shared overlay fade */
@@ -707,22 +707,42 @@ h3 {
 @media (min-width: 900px) {
 
   .home-intro {
+    display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
+    gap: var(--space-lg);
+
+    min-height: clamp(420px, 60vh, 700px);
   }
 
   .home-intro-text h1 {
     text-align: left;
   }
 
+  .home-intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex: 0 0 clamp(520px, 38vw, 700px);
+}
+
   .home .home-intro-image {
-    flex: 0 0 50%;
-    width: 54%;
-    height: clamp(220px, 28vw, 360px);
+    flex: 1;
+
+    align-self: stretch;
+
     object-fit: cover;
     object-position: 60% 35%;
-    margin-inline: 0;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  .home .container {
+    max-width:1600px;
   }
 
 }
@@ -734,9 +754,11 @@ h3 {
 
   background:
     var(--hero-gradient),      
-    url("/r-not-website/images/image2.jpg");
+    /*url("/r-not-website/images/image2.jpg");*/
+     url("../images/image2.jpg");
 
-  background-position: center, center 50%;
+   background-position: center, center 50%;
+   background-size: 100% 100%, cover;
 }
 
 .hero1 .hero-inner {
@@ -768,9 +790,11 @@ h3 {
 
   background:
     var(--hero-gradient),
-    url("/r-not-website/images/image1.jpg");
+    /*url("/r-not-website/images/image1.jpg");*/
+   url("../images/image1.jpg");
 
   background-position: center, center 20%;
+  background-size: 100% 100%, cover;
 }
 
 .hero .hero-inner {
@@ -788,9 +812,11 @@ h3 {
 
   background:
     var(--hero-gradient),
-    url("/r-not-website/images/image3.jpg");
+    /*url("/r-not-website/images/image3.jpg");*/
+    url("../images/image3.jpg");
 
   background-position: center, center 70%;
+  background-size: 100% 100%, cover;
 }
 
 .hero2 .hero-inner {
