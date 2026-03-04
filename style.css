@@ -584,7 +584,7 @@ h3 {
 .team-card {
   align-self: start;
   background: #ffffff;
-  padding: var(--space-md);
+  padding: clamp(20px, 2vw, 28px);
   border-radius: 18px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -596,8 +596,8 @@ h3 {
 
 .team-top {
   display: flex;
-  gap: var(--space-sm);
-  align-items: center;
+  gap: var(--space-md);
+  align-items: flex-start;
   margin-bottom: var(--space-xs);
 }
 
@@ -605,8 +605,9 @@ h3 {
 /* PHOTO */
 
 .team-photo {
-  width: clamp(80px, 6vw, 100px);
-  height: clamp(80px, 6vw, 100px);
+  width: clamp(90px, 6vw, 120px);
+  height: clamp(90px, 6vw, 120px);
+  min-width: clamp(90px, 7vw, 120px);
   ;
   object-fit: cover;
   border-radius: 12px;
