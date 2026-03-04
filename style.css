@@ -605,8 +605,8 @@ h3 {
 /* PHOTO */
 
 .team-photo {
-  width: clamp(70px, 6vw, 90px);
-  height: clamp(70px, 6vw, 90px);
+  width: clamp(80px, 6vw, 100px);
+  height: clamp(80px, 6vw, 100px);
   ;
   object-fit: cover;
   border-radius: 12px;
