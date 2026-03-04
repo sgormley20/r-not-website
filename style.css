@@ -675,6 +675,13 @@ h3 {
   text-align: center;
 }
 
+.home-intro-text .intro-head {
+  margin: 0 0 12px 0;
+  line-height: 1.05;
+  font-size: clamp(30px, 2vw, 50px);
+  letter-spacing: -0.4px;
+}
+
 .home-intro-text .intro-lead {
   font-size: clamp(24px, 1.6vw, 30px);
   line-height: 1.35;
@@ -840,8 +847,8 @@ h3 {
 
 .page-n2o .n2o-molecule {
   position: absolute;
-  right: clamp(180px, 12vw, 280px);
-  top: clamp(250px, 18vw, 280px);
+  right: clamp(200px, 12vw, 280px);
+  top: clamp(180px, 18vw, 210px);
 
   width: clamp(140px, 18vw, 260px);
   opacity: 0.6;
@@ -863,7 +870,7 @@ h3 {
 .take-part .check {
   position: absolute;
   right: clamp(300px, 12vw, 400px);
-  top: clamp(250px, 18vw, 280px);
+  top: clamp(170px, 18vw, 200px);
 
   width: clamp(50px, 18vw, 180px);
   opacity: 0.6;
@@ -885,9 +892,9 @@ h3 {
 .involved .path {
   position: absolute;
   right: clamp(230px, 12vw, 330px);
-  top: clamp(60px, 18vw, 110px);
+  top: clamp(30px, 18vw, 80px);
 
-  width: clamp(60px, 20vw, 320px);
+  width: clamp(40px, 20vw, 300px);
   opacity: 0.6;
   pointer-events: none;
 }
