@@ -887,8 +887,8 @@ h3 {
 
 .page-n2o .n2o-molecule {
   position: absolute;
-  right: clamp(200px, 12vw, 280px);
-  top: clamp(180px, 18vw, 210px);
+  right: clamp(300px, 12vw, 380px);
+  top: clamp(10px, 18vw, 30px);
 
   width: clamp(140px, 18vw, 260px);
   opacity: 0.6;
