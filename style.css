@@ -758,6 +758,10 @@ h3 {
 }
 
 @media (min-width: 1400px) {
+  .home .main-nav {
+    max-width: 1000px;
+    margin-inline: auto;
+  }
 
   .home .container {
     max-width:1600px;
