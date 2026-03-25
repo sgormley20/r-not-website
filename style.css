@@ -98,13 +98,6 @@ body {
 
 }
 
-/*.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}*/
-
 .header-inner {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -793,6 +786,41 @@ h3 {
   max-width: clamp(700px, 70%, 900px);
 }
 
+/*Learn PTSD landing*/
+.section-intro-text h2 {
+  font-size: clamp(30px, 2.2vw, 44px);
+  line-height: 1.15;
+  margin: 0;
+}
+
+.section-intro-text .intro-support {
+  font-size: clamp(22px, 1.1vw, 28px);
+  line-height: 1.6;
+  max-width: 55ch;
+  margin-top: var(--space-md);
+}
+
+.hero3 {
+  align-items: center;
+
+  background:
+    var(--hero-gradient),
+    /*url("/r-not-website/images/image1.png");*/
+   url("../images/brain1.png");
+
+  background-position: center, 60% center;
+  background-size: 100% 100%, cover;
+}
+
+.hero3 .hero-inner {
+  align-items: center;
+  transform: translateX(-4%);
+}
+
+.hero3 .hero-title {
+  max-width: 600px;
+}
+
 /*Taking part landing*/
 .section-intro-text h2 {
   font-size: clamp(30px, 2.2vw, 44px);
@@ -812,10 +840,10 @@ h3 {
 
   background:
     var(--hero-gradient),
-    url("/r-not-website/images/image1.jpg");
-   /*url("../images/image1.jpg");*/
+    /*url("/r-not-website/images/image1.png");*/
+   url("../images/image1.png");
 
-  background-position: center, center 20%;
+  background-position: center, center 40%;
   background-size: 100% 100%, cover;
 }
 
