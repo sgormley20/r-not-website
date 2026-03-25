@@ -85,7 +85,8 @@ body {
 ========================= */
 
 .site-header {
-  padding: var(--space-md) var(--space-md);
+  padding-top: clamp(6px, 1vw, 16px);
+  padding-inline: var(--space-md);
   background: linear-gradient(to bottom, #A596DC, #F6F5FA);
 }
 
@@ -97,19 +98,25 @@ body {
 
 }
 
-.header-inner {
+/*.header-inner {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}*/
+
+.header-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
 }
 
 .site-logo {
   height: clamp(120px, 14vw, 220px);
-  position: absolute;
+  position: static;
   left: clamp(16px, 4vw, 32px);
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(clamp(4px, 0.5vw, 10px));
 }
 
 @media (max-width: 700px) {
