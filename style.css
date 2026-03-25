@@ -605,7 +605,7 @@ h3 {
 /* PHOTO */
 
 .team-photo {
-  width: 160px;
+  width: clamp(130px, 6vw, 180px);
   aspect-ratio: 1 / 1;
   ;
   object-fit: cover;
@@ -613,11 +613,6 @@ h3 {
   object-position: center 30%;
 }
 
-@media (max-width: 800px) {
-  .team-photo {
-    width: 130px;
-  }
-}
 
 /* NAME */
 
