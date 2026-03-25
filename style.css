@@ -605,15 +605,19 @@ h3 {
 /* PHOTO */
 
 .team-photo {
-  width: clamp(130px, 6vw, 180px);
-  height: clamp(130px, 6vw, 180px);
-  min-width: clamp(110px, 7vw, 140px);
+  width: 160px;
+  aspect-ratio: 1 / 1;
   ;
   object-fit: cover;
   border-radius: 12px;
   object-position: center 30%;
 }
 
+@media (max-width: 800px) {
+  .team-photo {
+    width: 130px;
+  }
+}
 
 /* NAME */
 
