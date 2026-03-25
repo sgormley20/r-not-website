@@ -840,8 +840,8 @@ h3 {
 
   background:
     var(--hero-gradient),
-    /*url("/r-not-website/images/image1.png");*/
-   url("../images/image1.png");
+    url("/r-not-website/images/image1.png");
+   /*url("../images/image1.png");*/
 
   background-position: center, center 40%;
   background-size: 100% 100%, cover;
