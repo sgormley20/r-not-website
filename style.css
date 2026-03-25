@@ -605,13 +605,13 @@ h3 {
 /* PHOTO */
 
 .team-photo {
-  width: clamp(110px, 6vw, 140px);
-  height: clamp(110px, 6vw, 140px);
+  width: clamp(130px, 6vw, 180px);
+  height: clamp(130px, 6vw, 180px);
   min-width: clamp(110px, 7vw, 140px);
   ;
   object-fit: cover;
   border-radius: 12px;
-  object-position: center top;
+  object-position: center 30%;
 }
 
 
