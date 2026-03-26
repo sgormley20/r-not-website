@@ -605,14 +605,27 @@ h3 {
 /* PHOTO */
 
 .team-photo {
-  width: clamp(130px, 6vw, 180px);
-  aspect-ratio: 1 / 1;
-  ;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 12px;
   object-position: center 30%;
 }
 
+/* Slightly bigger on larger screens */
+@media (min-width: 1000px) {
+  .team-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .team-photo {
+    width: 170px;
+    height: 170px;
+  }
+}
 
 /* NAME */
 
