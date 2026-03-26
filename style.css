@@ -962,3 +962,27 @@ h3 {
     right: clamp(100px, 14vw, 200px);
   }
 }
+
+/* =========================
+   HERO MOBILE OVERRIDES
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero1 {
+    background-position: center, center 50%;
+  }
+
+  .hero3 {
+    background-position: center, 60% center;
+  }
+
+  .hero {
+    background-position: center, center 40%;
+  }
+
+  .hero2 {
+    background-position: center, center 70%;
+  }
+
+}
