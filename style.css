@@ -968,6 +968,12 @@ h3 {
 ========================= */
 
 @media (max-width: 768px) {
+  .hero-base {
+    background-size: cover, cover;
+  }
+}
+
+@media (max-width: 768px) {
 
   .hero1 {
     background-position: center, center 50%;
