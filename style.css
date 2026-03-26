@@ -721,6 +721,7 @@ h3 {
 
   .home-intro-text h1 {
     font-size: clamp(28px, 6vw, 40px);
+    text-align: center;
   }
 
 }
@@ -981,7 +982,6 @@ h3 {
 
   .hero3 {
     background-position: center, 60% center;
-    background-size: 100% 100%, cover;
   }
 
   .hero {
