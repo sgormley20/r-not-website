@@ -817,8 +817,8 @@ h3 {
 
   background:
     var(--hero-gradient),
-    /*url("/r-not-website/images/brain1.png");*/
-   url("../images/brain1.png");
+    url("/r-not-website/images/brain1.png");
+   /*url("../images/brain1.png");*/
 
   background-position: center, 60% center;
   background-size: 100% 100%, cover;
