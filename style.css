@@ -969,7 +969,7 @@ h3 {
 
 @media (max-width: 768px) {
   .hero-base {
-    background-size: cover, cover;
+    background-size: cover, 130%;
   }
 }
 
