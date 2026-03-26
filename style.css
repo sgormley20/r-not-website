@@ -160,7 +160,7 @@ body {
   margin-top: var(--space-lg);
   background: rgba(165, 150, 220, 0.55);
   color: #1C1A78;
-  padding: var(--space-sm) 0;
+  padding: calc(var(--space-sm) * 0.2) 0;
   border-top: 1px solid rgba(28, 26, 120, 0.18);
   font-size: 12px;
 }
