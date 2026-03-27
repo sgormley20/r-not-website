@@ -46,8 +46,7 @@
 ========================= */
 html,
 body {
-  min-height: 100%;
-  height: auto;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -152,7 +151,7 @@ body {
   Site Footer 
 ========================= */
 .site-footer {
-  margin-top: var(--space-lg);
+  margin-top: auto;
   background: rgba(165, 150, 220, 0.55);
   color: #1C1A78;
   padding: calc(var(--space-sm) * 0.2) 0;
@@ -379,7 +378,7 @@ h3 {
 .layout {
   display: flex;
   gap: var(--space-lg);
-  align-items: flex-start;
+  align-items: stretch;
   flex-direction: column;
 }
 
