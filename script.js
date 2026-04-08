@@ -24,8 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const openText = button.dataset.open || "Read less";
       const closedText = button.dataset.closed || "Read more";
 
-      content.style.display = isOpen ? "none" : "block";
-      button.textContent = isOpen ? closedText : openText;
+      const newState = !isOpen;
+
+      content.style.display = newState ? "block" : "none";
+      button.textContent = newState ? openText : closedText;
+      button.setAttribute("aria-expanded", newState);
     });
   });
 

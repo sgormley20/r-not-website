@@ -152,11 +152,12 @@ body {
 ========================= */
 .site-footer {
   margin-top: auto;
-  background: rgba(165, 150, 220, 0.55);
+  /*background: rgba(165, 150, 220, 0.55);*/
+  background: #D6CCF2;
   color: #1C1A78;
   padding: calc(var(--space-sm) * 0.2) 0;
   border-top: 1px solid rgba(28, 26, 120, 0.18);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .footer-inner {
@@ -265,7 +266,11 @@ body {
 }
 
 .pill:hover {
-  background: #F5F2FC;
+  background: #EEEAF8;;
+}
+.pill:focus-visible {
+  outline: 3px solid #A596DC;
+  outline-offset: 2px;
 }
 
 .pill.active {
@@ -509,6 +514,26 @@ h3 {
   margin-top: var(--space-sm);
 }
 
+/* =========================
+   Inline headings (Read More sections)
+========================= */
+
+.inline-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--space-sm);
+}
+
+.inline-heading .inline-icon {
+  width: 22px;
+  height: 22px;
+  stroke: #1C1A81; /* uses your existing text color */
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+
 /* Mobile fix: prevent sticky hover */
 @media (hover: none) {
   .read-toggle:hover {
@@ -653,6 +678,42 @@ h3 {
 
 }
 
+/* =========================
+  Link styling 
+========================= */
+.main-content a {
+  color: #1C1A81;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.main-content a:hover,
+.main-content a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #2D2A8C; /* slightly different shade */
+}
+
+/* =========================
+  Skip styling 
+========================= */
+.skip-link {
+  position: absolute;
+  top: -100px; /* hide it off screen */
+  left: 10px;
+  background: #1C1A81;
+  color: white;
+  padding: 10px 14px;
+  z-index: 1000;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 10px; /* show when tabbed */
+}
 /* =========================
    Page-specific overrides
 ========================= */
@@ -917,7 +978,7 @@ h3 {
 .take-part .check {
   position: absolute;
   right: clamp(300px, 12vw, 400px);
-  top: clamp(170px, 18vw, 200px);
+  top: clamp(270px, 18vw, 300px);
 
   width: clamp(50px, 18vw, 180px);
   opacity: 0.6;
@@ -939,7 +1000,7 @@ h3 {
 .involved .path {
   position: absolute;
   right: clamp(230px, 12vw, 330px);
-  top: clamp(30px, 18vw, 80px);
+  top: clamp(120px, 18vw, 180px);
 
   width: clamp(40px, 20vw, 300px);
   opacity: 0.6;
@@ -956,6 +1017,19 @@ h3 {
   .involved .path {
     right: clamp(100px, 14vw, 200px);
   }
+}
+
+/*Talk to Someone*/
+.urgent-help {
+  background: rgba(165, 150, 220, 0.2);
+  padding: clamp(12px, 2vw, 18px);
+  border-radius: 10px;
+
+  font-size: clamp(17px, 0.5vw + 14px, 19px);
+  line-height: 1.5;
+  text-align: center;
+
+  margin: 20px auto 24px auto;
 }
 
 /* =========================
