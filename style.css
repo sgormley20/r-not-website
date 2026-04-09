@@ -1005,7 +1005,7 @@ h3 {
 .involved .path {
   position: absolute;
   right: clamp(230px, 12vw, 330px);
-  top: clamp(120px, 18vw, 180px);
+  top: clamp(55px, 18vw, 75px);
 
   width: clamp(40px, 20vw, 300px);
   opacity: 0.6;
@@ -1035,6 +1035,47 @@ h3 {
   text-align: center;
 
   margin: 20px auto 24px auto;
+}
+/*Contact Page*/
+.contact-block {
+  background: rgba(255, 255, 255, 0.6);
+  padding: var(--space-md);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* important */
+  gap:  var(--space-md);
+
+  max-width:600px; /* tighter than reading width */
+  margin: var(--space-md) auto 0 auto;
+  text-align: left;
+  backdrop-filter: blur(4px); 
+}
+
+.contact-block p {
+  font-size: clamp(17px, 0.5vw + 14px, 19px);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.contact-email {
+  font-size: clamp(20px, 1vw, 24px);
+  font-weight: 600;
+
+  padding: 12px 18px;
+  background: #EEEAF8;
+  border-radius: 12px;
+  margin-top: var(--space-sm);
+  display: inline-block;
+}
+
+.contact-secondary {
+  font-size: 15px;
+  color: rgba(28, 26, 129, 0.7);
+}
+
+.main-content h1 {
+  margin-bottom: var(--space-sm);
 }
 
 /* =========================
