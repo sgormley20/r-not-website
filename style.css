@@ -35,6 +35,11 @@
   box-sizing: border-box;
 }
 
+.main-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   max-width: var(--container);
   margin-inline: auto;
